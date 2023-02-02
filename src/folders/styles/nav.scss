@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  width: 100%;
+  //   padding-top: 10px;
+  background-color: rgb(71, 26, 85);
+  list-style: none;
+  // box-shadow: 1px 1px 1px 1px rgb(187, 165, 252);
+  .navbar_item_two {
+    display: flex;
+    flex: 0.8;
+    justify-content: space-evenly;
+    .lnk {
+      color: white;
+      text-decoration: none;
+      font-family: Roboto;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    > li > input {
+      border: none;
+      outline: none;
+      width: 19rem;
+      height: 1.5rem;
+    }
+    ::placeholder {
+      font-family: roboto;
+      text-align: center;
+      font-size: 13px;
+      color: blue;
+      opacity: 0.4;
+      text-transform: uppercase;
+    }
+    > li > img {
+      position: absolute;
+      left: 57.5rem;
+      width: 26.3px;
+      background-color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+  }
+
+  .navbar_item_three {
+    display: flex;
+    height: 3rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    > img {
+      background-color: whitesmoke;
+      width: 35px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .navbar_item_four {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 35px;
+    height: 30px;
+    border-radius: 30px;
+    // background-color: rgb(55, 0, 255);
+    > img {
+      width: 35px;
+      background-color: whitesmoke;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+}

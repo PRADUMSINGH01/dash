@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Nav from './folders/component/nav/Nav';
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
+import Home from './folders/component/home/Home';
+import Profile from './folders/component/profile/Profile';
+import Wish from './folders/component/wish/Wish';
+import Kurti from './folders/component/kurti/Kurti';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+      <Router>
+
+
+        <Routes>
+          <Route  path='/' element ={<Nav/>}  />
+        </Routes>
+
+        <Routes>
+          <Route  path='/' element ={<Home/>}  />
+        </Routes>
+
+        <Routes>
+          <Route  path='/profile' element ={<Profile/>}  />
+        </Routes>
+
+        <Routes>
+          <Route  path='/wishlist' element ={<Wish/>}  />
+        </Routes>
+
+
+        <Routes>
+          <Route  path='/kurti' element ={<Kurti />}  />
+        </Routes>
+      </Router>
+   </>
+    
   );
 }
 

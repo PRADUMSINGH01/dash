@@ -1,0 +1,27 @@
+.profile{
+    width: 50%;
+    margin-left: 25%;
+    height: 25rem;
+    margin-top: 130px;
+    background-color: rgb(229, 241, 241);
+>div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    height: 8rem;
+    justify-content: space-evenly;
+    background-color: rgb(231, 229, 229);
+    .email{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .pass{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+}
