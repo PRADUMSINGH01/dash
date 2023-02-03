@@ -21,10 +21,11 @@ const Nav = () => {
     <div className="nav">
       <div className="navbar_item_one">
         {/* logo */}
-        <img src="" alt="logo" />
+       <h1>kurti<span>shop</span></h1>
+      
       </div>
       <div className="navbar_item_two">
-        <Link className="lnk"  onClick={() => dispatch({type:"USER_FETCH_REQUESTED"})} to={"/kurti"}>
+        <Link className="lnk"  to={"/kurti"}>
           kurti
         </Link>
         <Link className="lnk" to={"/kurti"}>
@@ -47,14 +48,18 @@ const Nav = () => {
       </div>
 
       <div className="navbar_item_three">
-        <Link to={"/wishlist"}>
+        <Link to={"/wishlist"} className="lnk">
           <img src={shop_img} alt="icon" />{" "}
-          {data.length} 
+          
+            
         </Link>
+           <p>
+            {data.length} 
+            </p> 
       </div>
 
       <div className="navbar_item_four">
-        <Link to={"/profile"}>
+        <Link to={"/profile"} className="lnk">
           <img src={Profile_img} alt="icon" />
         </Link>
       </div>

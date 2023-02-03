@@ -4,20 +4,31 @@
     // background-color: rgb(252, 252, 220);
 
 .kurti_item_one{
+     position: fixed;
     display: flex;
-    width: 10%;
-    background-color: rgb(240, 227, 227);
-    margin-left: 10px;
+    width: 13%;
+    background-color: rgb(255, 178, 178);
+    margin-left: 0px;
     justify-content: space-evenly;
     height: 40rem;
+    top: 120px;
+    box-shadow: 10px 10px 10px 10px rgb(231, 228, 228);
     // align-items: center;
 // border:1px solid red ;
     // align-items: center;
+    border-radius: 0px 30px 30px 0px;
     .kurti_filter_one{
         display: flex;
         flex-direction: column;
-        width: 90px;
-        height: 30rem;
+        width: 200px;
+        height: 100vh;
+        // border: 0.01px solid rgb(149, 149, 149);
+        // margin-left: 60px;
+        >p{
+            font-size: 18px;
+            font-family: Roboto;
+            font-weight: 800;
+        }
 
     }
 
@@ -36,6 +47,7 @@
             >input{
                 width:25px;
                 height: 20px;
+                border: none;
             }
         }
     }
@@ -43,8 +55,8 @@
 
 
 .kurti_item_two{
-    width: 77%;
-margin-left: 100px;
+width: 90%;
+margin-left: 260px;
 display: flex;
 flex-wrap: wrap;
 box-sizing: border-box;
@@ -54,23 +66,31 @@ box-sizing: border-box;
         align-items: center;
         flex-wrap: wrap;
         width: 15rem;
-        height: 20rem;
+        height: 25rem;
         background-color: rgb(255, 255, 255);
-        margin-left: 10px ;
-        margin-top: 10px;
+        margin-left: 30px ;
+        margin-top: 40px;
         box-sizing: border-box;
         border-radius: 20px;
         box-shadow: 10px 10px 10px 10px rgb(224, 224, 224);
         >img{
             margin-top: 5px;
             width: 7rem;
-            height: 7rem;
+            height: 12rem;
+            object-fit: contain;
 
         }
         .button{
             width: 10rem;
-            display: flex;
-            justify-content: space-evenly;
+            >button{
+                width: 10rem;
+                height: 2rem;
+                background-color: whitesmoke;
+                border: 0.1px solid rgb(186, 182, 182);
+                opacity: 0.9;
+            }:hover{
+                background-color: pink;border: none;
+            }
         }
     }
 }

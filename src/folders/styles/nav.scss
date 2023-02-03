@@ -3,11 +3,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.5rem;
+  height: 4rem;
   width: 100%;
   //   padding-top: 10px;
-  background-color: rgb(71, 26, 85);
+  background-color: rgb(19,25,33);
   list-style: none;
+  .navbar_item_one{
+    // display: flex;
+>h1{
+  color: white;
+  >span{
+color: rgb(241, 216, 101) 
+  };
+}
+  }
+
   // box-shadow: 1px 1px 1px 1px rgb(187, 165, 252);
   .navbar_item_two {
     display: flex;
@@ -17,14 +27,16 @@
       color: white;
       text-decoration: none;
       font-family: Roboto;
-      font-weight: 400;
+      font-weight: 900;
+      font-size: 20px;
       text-transform: uppercase;
+  
     }
 
     > li > input {
       border: none;
       outline: none;
-      width: 19rem;
+      width: 24rem;
       height: 1.5rem;
     }
     ::placeholder {
@@ -37,9 +49,9 @@
     }
     > li > img {
       position: absolute;
-      left: 57.5rem;
+      left: 60.9rem;
       width: 26.3px;
-      background-color: rgb(255, 255, 255);
+     background-color: rgb(241, 241, 74);
       cursor: pointer;
     }
   }
@@ -47,16 +59,30 @@
   .navbar_item_three {
     display: flex;
     height: 3rem;
-    justify-content: space-evenly;
+    width: 60px;
+    // justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+.lnk{
 
-    > img {
-      background-color: whitesmoke;
-      width: 35px;
-      border-radius: 30px;
-      cursor: pointer;
-    }
+  color: whitesmoke;
+  > img {
+    border-radius: 30px;
+    width: 40px;
+    background-color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    right: -50px;
+  }
+}
+
+>p{
+  position: absolute;
+  top: -20px;
+  color: red;
+  right: 110px;
+  font-size: 25px;
+}
   }
 
   .navbar_item_four {
@@ -68,11 +94,16 @@
     height: 30px;
     border-radius: 30px;
     // background-color: rgb(55, 0, 255);
-    > img {
-      width: 35px;
-      background-color: whitesmoke;
-      border-radius: 30px;
-      cursor: pointer;
+    .lnk{
+
+      > img {
+        width: 40px;
+        background-color: whitesmoke;
+        border-radius: 30px;
+        cursor: pointer;
+        position: relative;
+        right: 15px;
+      }
     }
   }
 }

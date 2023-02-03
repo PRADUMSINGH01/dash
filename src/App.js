@@ -1,4 +1,5 @@
-
+import { useState,useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './App.css';
 import Nav from './folders/component/nav/Nav';
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
@@ -7,14 +8,25 @@ import Profile from './folders/component/profile/Profile';
 import Wish from './folders/component/wish/Wish';
 import Kurti from './folders/component/kurti/Kurti';
 function App() {
+const dispatch = useDispatch()
+useEffect(()=>{
+dispatch( dispatch({type:"USER_FETCH_REQUESTED"}))
+
+},[])
+
+
   return (
    <>
       <Router>
 
 
-        <Routes>
-          <Route  path='/' element ={<Nav/>}  />
+      
+         
+    
+          <Routes>
+          <Route  path='/' element ={ <Nav/>}  />
         </Routes>
+
 
         <Routes>
           <Route  path='/' element ={<Home/>}  />
